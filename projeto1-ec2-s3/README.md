@@ -144,6 +144,138 @@ Projeto atualizado no GitHub Web!
 ✅ Agora que você criou o projeto via CMD, só falta executar esse trio de comandos para que ele vá para o GitHub. Me avisa quando quiser fazer isso, que eu te acompanho passo a passo!
 
 
+Perfeito! 🚀 Agora que o primeiro projeto foi criado com sucesso, vamos subir ele para o GitHub, dentro do seu repositório aws-cloud-projects.
+
+Aqui vai o passo a passo completo e bem explicado para você fazer isso com segurança.
+
+✅ 📂 Etapa 1 – Vá até a raiz do repositório
+Abra o terminal (CMD) e vá até o repositório local onde está o projeto:
+
+cmd
+Copiar
+Editar
+cd C:\Users\seu-nome\caminho\para\aws-cloud-projects
+✅ 📌 Etapa 2 – Verifique o status do Git
+bash
+Copiar
+Editar
+git status
+Isso mostrará os arquivos que foram adicionados, modificados ou ainda não rastreados.
+
+✅ 📌 Etapa 3 – Adicione todos os arquivos
+bash
+Copiar
+Editar
+git add .
+(O ponto adiciona todos os arquivos e subpastas.)
+
+✅ 📌 Etapa 4 – Faça o commit
+bash
+Copiar
+Editar
+git commit -m "Projeto 1: EC2 + S3 com Terraform"
+(O commit cria um registro das alterações feitas.)
+
+✅ 📌 Etapa 5 – Envie os arquivos para o GitHub (push)
+bash
+Copiar
+Editar
+git push origin main
+Isso vai subir seu projeto do seu computador para a versão web do repositório no GitHub.
+
+📌 Resultado:
+Agora, se você acessar seu repositório aws-cloud-projects no navegador, verá o diretório projeto1-ec2-s3 com os arquivos:
+
+css
+Copiar
+Editar
+README.md
+terraform/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+✅ Seu projeto já estará público, organizado e documentado para recrutadores ou qualquer visitante!
+
+Esse erro significa que o Git ainda não sabe quem é você — ou seja, falta configurar seu nome e e-mail, que são usados para registrar os commits com sua identidade.
+
+Mas é fácil resolver! Vamos configurar isso agora:
+
+✅ Etapa única: Configurar sua identidade no Git (uma vez só)
+No CMD, digite (substituindo pelas suas informações reais):
+
+bash
+Copiar
+Editar
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@exemplo.com"
+🔁 Exemplo real:
+
+bash
+Copiar
+Editar
+git config --global user.name "João Silva"
+git config --global user.email "joao.silva@gmail.com"
+💡 O que esses comandos fazem?
+--global significa que essas informações serão salvas para todos os repositórios do seu computador.
+
+Assim, você não precisará repetir isso nos próximos projetos.
+
+✅ Depois disso:
+Tente novamente o commit:
+
+bash
+Copiar
+Editar
+
+git commit -m "Projeto 1: EC2 + S3 com Terraform"
+E depois:
+
+bash
+Copiar
+Editar
+
+git push origin main
+📌 Me avise quando subir, e te ajudo a revisar o visual no GitHub Web também! 🚀
+
+✅ Solução: Ignorar a pasta .terraform antes de fazer o commit
+📌 Passo 1 – Criar um arquivo .gitignore
+Na raiz do seu projeto (dentro de aws-cloud-projects), crie um arquivo chamado:
+
+bash
+Copiar
+Editar
+echo .terraform/ > .gitignore
+echo .terraform.lock.hcl >> .gitignore
+echo terraform.tfstate >> .gitignore
+echo terraform.tfstate.backup >> .gitignore
+Ou edite manualmente o arquivo .gitignore com esse conteúdo:
+
+gitignore
+Copiar
+Editar
+# Ignorar arquivos do Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+📌 Passo 2 – Remover arquivos grandes do histórico antes de tentar novamente
+bash
+Copiar
+Editar
+git rm -r --cached projeto1-ec2-s3/terraform/.terraform
+📌 Passo 3 – Refazer o commit e tentar novamente
+bash
+Copiar
+Editar
+git add .
+git commit -m "Projeto 1: EC2 + S3 com Terraform (corrigido .gitignore)"
+git push origin main
+✅ Isso vai evitar que arquivos pesados desnecessários sejam enviados para o GitHub e permitir que seu push finalize com sucesso.
+
+Me avise quando fizer isso ou se quiser que eu gere o conteúdo .gitignore completo pra você! 🚀
+
+
+
 
 
 
