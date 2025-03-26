@@ -14,8 +14,11 @@ Cada projeto está estruturado em sua própria pasta, com documentação clara e
 
 ## 📁 Project Index | Índice de Projetos
 
+## 📁 Project Index | Índice de Projetos
+
 - [Projeto 1: EC2 + S3 com Terraform](./projeto1-ec2-s3)
 - [Projeto 2: VPC Básica com Subnets e IGW](./projeto2-vpc-basica)
+- [Projeto 3: EC2 com VPC e Security Group (SSH)](./projeto3-ec2-vpc-sg)
 
 *More projects coming soon... | Mais projetos em breve...*
 
