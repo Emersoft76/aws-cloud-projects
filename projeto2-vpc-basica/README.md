@@ -33,6 +33,7 @@ O objetivo é simular um ponto de partida para aplicações escaláveis voltadas
 
 ## 📂 Estrutura
 
+projeto2-vpc-basica/ ├── terraform/ │ ├── main.tf │ ├── variables.tf │ └── outputs.tf └── 
 
 ---
 
