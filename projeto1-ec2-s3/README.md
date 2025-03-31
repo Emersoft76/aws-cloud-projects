@@ -17,7 +17,7 @@ This project creates an EC2 instance and an S3 bucket using Terraform, demonstra
 ## ▶️ Como executar | How to run
 1. Configure o AWS CLI com `aws configure`
 2. Acesse a pasta `terraform`
-3. Execute: 'terraform init terraform apply'
+3. Execute: `terraform init` e `terraform apply`   
 4. Confirme com `yes`
 
 ## ✅ Resultado Esperado
