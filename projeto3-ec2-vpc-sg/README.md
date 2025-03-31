@@ -35,6 +35,8 @@ Este projeto provisiona um ambiente completo para iniciar uma instância EC2 com
 
 ## 📂 Estrutura
 
+projeto3-ec2-vpc-sg/ ├── terraform/ │ ├── main.tf │ ├── variables.tf │ └── outputs.tf └── README.md
+
 ---
 
 ## ▶️ Execução
