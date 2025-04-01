@@ -43,25 +43,3 @@ projeto6-s3-cloudfront-https/ ├── site/ │ └── index.html ├──
 **1. Configure suas credenciais AWS via AWS CLI:**
 ```bash
 aws configure
-
-✅ Etapa – Commit e Push do Projeto 6
-📌 No CMD, na raiz do repositório aws-cloud-projects:
-
-cd C:\Users\ecpms\aws-cloud-projects
-
-1️⃣ Adicionar os arquivos:
-
-git add .
-
-2️⃣ Fazer o commit:
-
-git commit -m "Projeto 6: S3 Static Website + CloudFront + HTTPS"
-
-3️⃣ Enviar para o GitHub:
-
-git push origin main
-
-✅ Depois disso, atualizamos juntos o README.md principal com o novo projeto na lista.
-
-Me avise quando concluir o push! 🚀
-Como classificaria este GPT até ao momento?
