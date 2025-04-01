@@ -19,6 +19,7 @@ Cada projeto está estruturado em sua própria pasta, com documentação clara e
 - [Projeto 3: EC2 com VPC e Security Group (SSH)](./projeto3-ec2-vpc-sg)
 - [Projeto 4: Auto Scaling + ALB com Terraform](./projeto4-autoscaling-alb)
 - [Projeto 5: Lambda + API Gateway + DynamoDB (Serverless)](./projeto5-lambda-apigateway-dynamodb)
+- [Projeto 6: S3 Static Website + CloudFront + HTTPS](./projeto6-s3-cloudfront-https)
 
 *More projects coming soon... | Mais projetos em breve...*
 
