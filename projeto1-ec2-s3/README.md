@@ -1,43 +1,48 @@
-# 🚀 Projeto 1 – AWS EC2 + S3 com Terraform
+# ☁️ Projeto 1 – EC2 + S3 com Terraform
 
-## 📌 Descrição (PT)
-Este projeto cria uma instância EC2 e um bucket S3 usando Terraform, demonstrando os fundamentos da infraestrutura como código (IaC) na AWS.
+## 🇬🇧 Description
+This project demonstrates how to provision an EC2 instance and an S3 bucket using Terraform. It showcases basic infrastructure deployment, security groups, and cloud resource organization.
 
-## 📌 Description (EN)
-This project creates an EC2 instance and an S3 bucket using Terraform, demonstrating the fundamentals of Infrastructure as Code (IaC) on AWS.
+## 🇧🇷 Descrição
+Este projeto demonstra como provisionar uma instância EC2 e um bucket S3 utilizando Terraform. Ele destaca a criação básica de infraestrutura, grupos de segurança e organização de recursos na nuvem.
 
-## 🛠️ Serviços AWS utilizados | AWS Services Used
-- EC2
-- S3
+---
 
-## ⚙️ Tecnologias | Technologies
+## 🛠️ Serviços AWS Utilizados | AWS Services Used
+
+- EC2 (Elastic Compute Cloud)
+- S3 (Simple Storage Service)
+- VPC (Virtual Private Cloud)
+- Security Groups
 - Terraform
-- AWS CLI
 
-## ▶️ Como executar | How to run
-1. Configure o AWS CLI com `aws configure`
-2. Acesse a pasta `terraform`
-3. Execute: `terraform init` e `terraform apply`   
-4. Confirme com `yes`
+---
 
-## ✅ Resultado Esperado
+## ✅ Resultado Esperado | Expected Result
+
 - Uma instância EC2 criada
 - Um bucket S3 provisionado automaticamente
 
 ---
 
+## ▶️ Execução
+
 **1. Configure o AWS CLI / Configure AWS CLI:**
 ```bash
 aws configure
 
+2. Acesse a pasta terraform:
+
 cd terraform
+
+3. Execute os comandos Terraform:
 
 terraform init
 terraform apply
 
 ---
 
-📁 Estrutura do Projeto
+📁 Estrutura do Projeto | Project Structure
 
 projeto1-ec2-s3/
 ├── terraform/
@@ -52,8 +57,8 @@ projeto1-ec2-s3/
 
 Todos os recursos são criados e removidos com os comandos terraform apply e terraform destroy, garantindo controle de custos e respeito aos limites do Free Tier da AWS.
 
-Além disso, a gestão segura e eficiente dos recursos na nuvem é uma responsabilidade compartilhada com a AWS, cabendo ao usuário configurar, monitorar e manter suas aplicações com boas práticas.
+Além disso, a gestão segura e eficiente dos recursos na nuvem é uma responsabilidade compartilhada com a AWS — cabendo ao usuário configurar, monitorar e manter suas aplicações com boas práticas.
 
 All resources are created and destroyed using terraform apply and terraform destroy, ensuring cost control and adherence to AWS Free Tier limits.
 
-Furthermore, secure and efficient cloud resource management is a shared responsibility with AWS, users are responsible for configuring, monitoring, and maintaining their workloads using best practices.
+Furthermore, secure and efficient cloud resource management is a shared responsibility with AWS — users are responsible for configuring, monitoring, and maintaining their workloads using best practices.
