@@ -1,46 +1,72 @@
-# 💻 Projeto 3 – EC2 com VPC + Security Group (SSH Access)
+# 🖥️ Projeto 3 – EC2 com VPC e Security Group
 
-## 🇬🇧 Description
-This project provisions a complete environment to launch an EC2 instance with public access using Terraform:
+## 🇬🇧 Description  
+This project provisions an EC2 instance inside a custom VPC using Terraform.  
+It includes:  
+- A VPC  
+- A public subnet  
+- A Security Group with SSH and HTTP access  
+- An EC2 instance with a public IP
 
-- A custom VPC
-- One public subnet
-- An Internet Gateway
-- A public Route Table
-- A Security Group that allows SSH (port 22)
-- An EC2 instance with a public IP and SSH key
+This setup is ideal for testing simple public instances in a controlled and secure environment.
 
-## 🇧🇷 Descrição
-Este projeto provisiona um ambiente completo para iniciar uma instância EC2 com acesso público utilizando Terraform:
+## 🇧🇷 Descrição  
+Este projeto provisiona uma instância EC2 dentro de uma VPC personalizada usando Terraform.  
+Ele inclui:  
+- Uma VPC  
+- Uma subnet pública  
+- Um Security Group com acesso SSH e HTTP  
+- Uma instância EC2 com IP público
 
-- Uma VPC personalizada
-- Uma subnet pública
-- Um Internet Gateway
-- Uma Tabela de Rotas pública
-- Um Security Group que libera a porta SSH (22)
-- Uma instância EC2 com IP público e chave SSH
-
----
-
-## 🛠️ Serviços AWS Utilizados | AWS Services Used
-
-- EC2
-- VPC
-- Subnet
-- Internet Gateway
-- Route Table
-- Security Group
+Essa configuração é ideal para testes com instâncias públicas simples em um ambiente controlado e seguro.
 
 ---
 
-## 📂 Estrutura
+## 🛠️ Serviços AWS Utilizados | AWS Services Used  
+- VPC  
+- Subnet  
+- Security Group  
+- EC2  
+- Terraform
 
-projeto3-ec2-vpc-sg/ ├── terraform/ │ ├── main.tf │ ├── variables.tf │ └── outputs.tf └── README.md
+---
+
+## ✅ Resultado Esperado | Expected Result  
+- Uma instância EC2 pública acessível via SSH e HTTP  
+- Rede personalizada com segurança configurada
 
 ---
 
 ## ▶️ Execução
 
-**1. Configure suas credenciais AWS via AWS CLI:**
+**1. Configure o AWS CLI / Configure AWS CLI:**  
 ```bash
 aws configure
+
+cd terraform
+
+terraform init  
+terraform apply
+
+---
+
+📁 Estrutura do Projeto | Project Structure
+
+projeto3-ec2-vpc-sg/
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+└── README.md
+
+---
+
+ℹ️ Nota Importante | Important Note
+
+Todos os recursos são criados e removidos com os comandos terraform apply e terraform destroy, garantindo controle de custos e respeito aos limites do Free Tier da AWS.
+
+Além disso, a gestão segura e eficiente dos recursos na nuvem é uma responsabilidade compartilhada com a AWS — cabendo ao usuário configurar, monitorar e manter suas aplicações com boas práticas.
+
+All resources are created and destroyed using terraform apply and terraform destroy, ensuring cost control and adherence to AWS Free Tier limits.
+
+Furthermore, secure and efficient cloud resource management is a shared responsibility with AWS — users are responsible for configuring, monitoring, and maintaining their workloads using best practices.
