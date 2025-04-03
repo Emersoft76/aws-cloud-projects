@@ -42,7 +42,7 @@ terraform apply
 
 ---
 
-📁 Estrutura do Projeto | Project Structure
+📁 Estrutura | Structure
 
 projeto1-ec2-s3/
 ├── terraform/
