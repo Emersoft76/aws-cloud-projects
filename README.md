@@ -1,12 +1,12 @@
 # ☁️ AWS Cloud Projects with Terraform | Projetos em Nuvem com Terraform
 
 ## 🇬🇧 Welcome!
-Hey guys, this repository brings together practical and progressive cloud projects using AWS and Terraform — ranging from basic infrastructure deployment to more advanced and automated solutions.
+Hey guys, this repository brings together practical and progressive cloud projects using AWS and Terraform, ranging from basic infrastructure deployment to more advanced and automated solutions.
 
 Each project is structured in its own folder with clear documentation and hands-on examples.
 
 ## 🇧🇷 Bem-vindo!
-Olá pessoal, este repositório reúne projetos práticos e progressivos em nuvem usando AWS e Terraform — desde a criação básica de infraestrutura até soluções mais avançadas e automatizadas.
+Olá pessoal, este repositório reúne projetos práticos e progressivos em nuvem usando AWS e Terraform, desde a criação básica de infraestrutura até soluções mais avançadas e automatizadas.
 
 Cada projeto está estruturado em sua própria pasta, com documentação clara e exemplos hands-on.
 
