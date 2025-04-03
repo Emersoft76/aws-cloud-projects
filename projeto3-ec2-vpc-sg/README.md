@@ -43,7 +43,11 @@ Essa configuração é ideal para testes com instâncias públicas simples em um
 ```bash
 aws configure
 
+2. Acesse a pasta terraform:
+
 cd terraform
+
+3. Execute os comandos Terraform:
 
 terraform init  
 terraform apply
