@@ -26,12 +26,6 @@ This project creates an EC2 instance and an S3 bucket using Terraform, demonstra
 
 ---
 
-## 📂 Estrutura do Projeto
-
-projeto1-ec2-s3/ ├── terraform/ │ ├── main.tf │ ├── variables.tf │ ├── outputs.tf └── README.md
-
----
-
 **1. Configure o AWS CLI / Configure AWS CLI:**
 ```bash
 aws configure
@@ -40,6 +34,17 @@ cd terraform
 
 terraform init
 terraform apply
+
+---
+
+📁 Estrutura do Projeto
+
+projeto1-ec2-s3/
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+└── README.md
 
 ---
 
